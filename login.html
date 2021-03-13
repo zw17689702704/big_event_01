@@ -22,7 +22,7 @@
         <div class="titleBox"></div>
         <!-- 2.登录 -->
         <div class="login-box">
-            <form class="login-form layui-form">
+            <form class="login-form layui-form" id="form_login">
                 <div class="layui-form-item">
                     <i class="layui-icon layui-icon-username"></i>
                     <input type="text" name="username" required lay-verify="required" placeholder="请输入用户名"
@@ -43,7 +43,7 @@
         </div>
         <!-- 3.注册 -->
         <div class="reg-box" style="display: none">
-            <form class="reg-form layui-form">
+            <form class="reg-form layui-form" id="form_reg">
                 <div class="layui-form-item">
                     <i class="layui-icon layui-icon-username"></i>
                     <input type="text" name="username" required lay-verify="required" placeholder="请输入用户名"
@@ -73,6 +73,9 @@
 <script src="/assets/lib/layui/layui.all.js"></script>
 <!-- 5.1引入jquery -->
 <script src="/assets/lib/jquery.js"></script>
+
+<!-- baseAPI.js要写到，jq之后，本页面js之前 -->
+<script src="/assets/js/baseAPI.js"></script>
 <!-- 5.2引入login.js -->
 <script src="/assets/js/login.js"></script>
 

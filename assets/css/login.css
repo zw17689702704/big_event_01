@@ -41,6 +41,10 @@ html {
     padding: 0 30px;
 }
 
+.layui-btn-normal {
+    width: 100%;
+}
+
 .links {
     display: flex;
     justify-content: flex-end;
