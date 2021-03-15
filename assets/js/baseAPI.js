@@ -16,7 +16,7 @@ $.ajaxPrefilter(function (options) {
     }
 
     options.complete = function (res) {
-        console.log(res.responseJSON);
+        // console.log(res.responseJSON);
         //判断如果状态是1 错误信息是身份认证失败  那么就销毁当前
         let obj = res.responseJSON;
         if (obj.status == 1 && obj.message === "身份认证失败！") {
