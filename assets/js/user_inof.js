@@ -55,7 +55,7 @@ $(function () {
                 //此时的window指的是user_inof.html
                 // console.log(window);
                 // console.log(window.parent);
-                window.parent.grtUserInfo();
+                window.parent.getUserInfo();
             }
         })
     })
