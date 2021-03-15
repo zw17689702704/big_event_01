@@ -2,7 +2,7 @@ $(function () {
 
     //需求1：ajax获取用户信息，渲染到页面
     //这个功能，后面其他的页面\
-    grtUserInfo();
+    getUserInfo();
 
 
     //2.退出功能
@@ -19,7 +19,7 @@ $(function () {
     })
 });
 
-function grtUserInfo() {
+function getUserInfo() {
     $.ajax({
         url: '/my/userinfo',
         method: 'GET',
@@ -59,7 +59,7 @@ function renderAvatar(user) {
         $('.text-avatar').html(name[0].toUpperCase());
     } else {
         //渲染图片头像，隐藏文字头像
-        $('.layui-nav-img').attr("src", user_pic);
+        $('.layui-nav-img').attr("src", user.user_pic);
         $('.text-avatar').hide();
     }
 }
